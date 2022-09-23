@@ -4,5 +4,6 @@ export const theme = {
     azulBg: '#010b21',
     naranjaClaro: '#D98C4A',
     naranjaOscuro: 'D96941',
-    rojo: '#BF5454'
+    rojo: '#BF5454',
+    grisOscuro: '#232323'
 }

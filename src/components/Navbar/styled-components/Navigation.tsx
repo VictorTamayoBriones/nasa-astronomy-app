@@ -1,7 +1,11 @@
 import styled from 'styled-components';
 import { theme } from '../../../theme';
 
-export const NavigationBar = styled.nav`
+interface Props{
+    menuIsOpen: boolean
+}
+
+export const NavigationBar = styled.nav<Props>`
     width: 100%;
     background: ${theme.azulOscuro};
     padding: 8px;
@@ -9,8 +13,14 @@ export const NavigationBar = styled.nav`
     gap: 30px;
     align-items: center;
     color: #fff;
+    svg{
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        z-index: 2;
+    }
     section{
-        width: 20%;
+        /* width: 20%; */
         display: flex;
         align-items: center;
         gap: 10px;
@@ -20,7 +30,6 @@ export const NavigationBar = styled.nav`
         }
     }
     ul{
-        width: 80%;
         list-style: none;
         display: flex;
         li{
@@ -58,4 +67,29 @@ export const NavigationBar = styled.nav`
             }
         }
     }
+
+    @media(max-width: 674px){
+        ul{
+            height: ${(props)=>props.menuIsOpen ? '200px' : '0'};
+            overflow: hidden;
+            background: ${theme.azulOscuro};
+            flex-direction: column;
+            position: absolute;
+            top: 0;
+            right: 0;
+            gap: 8px;
+            transition: .5s ease-out all;
+            li{
+                padding: 12px 0;
+                &:first-child, &:last-child{
+                    a{
+                        &:hover{
+                            border-radius: 0;
+                        }
+                    }
+                }
+            }
+            
+        }
+    } 
 `;
