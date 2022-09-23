@@ -14,6 +14,7 @@ export const NavigationBar = styled.nav<Props>`
     align-items: center;
     color: #fff;
     svg{
+        display: none;
         position: absolute;
         top: 5px;
         right: 5px;
@@ -70,6 +71,9 @@ export const NavigationBar = styled.nav<Props>`
 
     @media(max-width: 674px){
         ul{
+            svg{
+                display: block;
+            }
             height: ${(props)=>props.menuIsOpen ? '200px' : '0'};
             overflow: hidden;
             background: ${theme.azulOscuro};
