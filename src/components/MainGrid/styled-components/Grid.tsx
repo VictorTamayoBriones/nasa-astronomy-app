@@ -9,6 +9,10 @@ export const Grid = styled.section`
     @media(max-width: 700px){
         width: 95%;
     }
+
+    @media(max-width: 300px){
+        width: 100%;
+    }
 `;
 
 export const MainGridContainer = styled.section`
@@ -21,5 +25,9 @@ export const MainGridContainer = styled.section`
     @media(max-width: 700px){
         margin-top: 20px;
         align-items: flex-start;
+    }
+
+    @media(max-width: 300px){
+        margin-top: 0;
     }
 `;
