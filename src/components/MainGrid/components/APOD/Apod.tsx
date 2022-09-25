@@ -7,11 +7,11 @@ function Apod() {
   const navigate = useNavigate();
 
   return (
-    <GridItem width="50" image="https://api.nasa.gov/assets/img/general/apod.jpg" onClick={()=>navigate(PublicRoutes.APOD)} >
+    <GridItem width="50" image="http://www.washingtonpost.com/rf/image_2048w/2010-2019/WashingtonPost/2014/07/15/Interactivity/Images/AstronomyPhotog01-IvanEder1405431301.jpg" onClick={()=>navigate(PublicRoutes.APOD)} >
       <GridItemBody>
         <h2>APOD</h2>
         <Description>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit explicabo perspiciatis quisquam sequi reiciendis nulla facere ad provident voluptas aliquid!</p>
+          <p>Astronomy Picture Of Day. <br /> Here you will can see the astronomy picture of day thanks to NASA APIS.</p>
         </Description>
       </GridItemBody>
     </GridItem>

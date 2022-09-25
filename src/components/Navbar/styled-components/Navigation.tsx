@@ -69,6 +69,10 @@ export const NavigationBar = styled.nav<Props>`
         }
     }
 
+    .active{
+        text-decoration: underline ${theme.azulClaro};
+    }
+
     @media(max-width: 674px){
         svg{
             display: block;

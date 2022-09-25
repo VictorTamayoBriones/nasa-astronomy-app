@@ -1,5 +1,5 @@
 export const PublicRoutes = {
-    HOME: '/',
+    HOME: '/home',
     APOD: '/apod',
     MRP: '/mrp',
     IMAGEANDVIDEO: '/image-and-video'

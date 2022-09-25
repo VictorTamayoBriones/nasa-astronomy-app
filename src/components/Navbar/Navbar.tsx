@@ -2,7 +2,8 @@ import { IconMenu2 } from '@tabler/icons';
 import { IconX } from '@tabler/icons';
 import { useState } from 'react';
 import { ImageBanner } from './components/ImageBanner';
-import { UlRoutes } from './components/UlRoutes';
+import { LinkRoutes } from './components/LinkRoutes';
+
 import { NavigationBar } from './styled-components/Navigation';
 
 function Navbar() {
@@ -16,7 +17,7 @@ function Navbar() {
         menuIsOpen ? <IconX onClick={()=>setMenuIsOpen(false)} /> : <IconMenu2 onClick={()=>setMenuIsOpen(true)} />
       }
       
-      <UlRoutes/>
+      <LinkRoutes/>
     </NavigationBar>
   )
 }

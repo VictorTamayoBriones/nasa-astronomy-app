@@ -11,7 +11,7 @@ function ImageAndVideo() {
       <GridItemBody>
         <h2>Image And Video Library</h2>
         <Description>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit explicabo perspiciatis quisquam sequi reiciendis nulla facere ad provident voluptas aliquid!</p>
+          <p>NASA Image and Video Library <br /> Here you will can see a lot of images and videos of NASA thanks to NASA Open APIs.</p>
         </Description>
       </GridItemBody>
     </GridItem>

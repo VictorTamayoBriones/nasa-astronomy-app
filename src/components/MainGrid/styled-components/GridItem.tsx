@@ -35,7 +35,7 @@ export const GridItem = styled.div<Props>`
     transition: .5s ease all;
     &:hover{
         ${Description}{
-            height: 155px;
+            height: 205px;
         }
     }
 `;

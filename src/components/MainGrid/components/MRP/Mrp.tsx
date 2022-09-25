@@ -11,7 +11,7 @@ function Mrp() {
       <GridItemBody>
         <h2>MRP</h2>
         <Description>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit explicabo perspiciatis quisquam sequi reiciendis nulla facere ad provident voluptas aliquid!</p>
+          <p>Mars Rover Photos. <br /> Image data gathered by NASA's Curiosity, Opportunity, and Spirit rovers on Mars.</p>
         </Description>
       </GridItemBody>
     </GridItem>
