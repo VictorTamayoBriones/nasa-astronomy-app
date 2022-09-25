@@ -5,7 +5,9 @@ function App() {
   return (
     <main className="App">
       <Navbar/>
-      <Routes/> {/*Renderiza las vistas por medio del archivo de rutas*/}
+      <section className="content" >
+        <Routes/> {/*Renderiza las vistas por medio del archivo de rutas*/}
+      </section>
     </main>    
   )
 }

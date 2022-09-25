@@ -25,6 +25,10 @@ export const NavigationBar = styled.nav<Props>`
         display: flex;
         align-items: center;
         gap: 10px;
+        a{
+            text-decoration: none;
+            color: #fff;
+        }
         img{
             width: 50px;
             height: 50px;
@@ -72,6 +76,8 @@ export const NavigationBar = styled.nav<Props>`
 
     .active{
         text-decoration: underline ${theme.azulClaro};
+        background: #fff;
+        color: ${ theme.azulOscuro };
     }
 
     @media(max-width: 674px){

@@ -4,7 +4,7 @@ function ImageBanner() {
   return (
     <section>
       <img src={Logo} alt="NASA Logo" />
-      <h2>By {'{Open APIs}'}</h2>
+      <h2><a href='https://api.nasa.gov/' target="_blank" >By {'{Open APIs}'}</a></h2>
     </section>
   )
 }
