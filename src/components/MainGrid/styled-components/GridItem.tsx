@@ -26,7 +26,7 @@ export const GridItem = styled.div<Props>`
             return '100%'
         }
     }};
-    height: 200px;
+    height: 250px;
     background-image: url(${(props)=>props.image});
     background-size: cover;
     background-position: center;
