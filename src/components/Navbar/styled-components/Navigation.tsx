@@ -33,6 +33,7 @@ export const NavigationBar = styled.nav<Props>`
     ul{
         list-style: none;
         display: flex;
+        font-size: 18px;
         li{
             &:first-child{
                 a{
@@ -80,7 +81,8 @@ export const NavigationBar = styled.nav<Props>`
             height: 40px;
         }
         ul{
-            height: ${(props)=>props.menuIsOpen ? '200px' : '0'};
+            font-size: 20px;
+            height: ${(props)=>props.menuIsOpen ? '230px' : '0'};
             overflow: hidden;
             background: ${theme.azulOscuro};
             flex-direction: column;
