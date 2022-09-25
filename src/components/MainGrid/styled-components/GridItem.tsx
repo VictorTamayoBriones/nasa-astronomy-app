@@ -47,5 +47,6 @@ export const GridItemBody = styled.footer`
     background: #00000080;
     padding: 5px;
     transition: .5s ease all;
+    pointer-events: none;
 `;
 

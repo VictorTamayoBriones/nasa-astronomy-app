@@ -1,11 +1,13 @@
+import { Link } from "react-router-dom"
+import { PublicRoutes } from "../../../../models"
 
 function UlRoutes() {
   return (
     <ul>
-      <li><a href="#">Inicio</a></li>
-      <li><a href="#">APOD</a></li>
-      <li><a href="#">MRP</a></li>
-      <li><a href="#">Image and Video Library</a></li>
+      <li><Link to={ PublicRoutes.HOME } >Inicio</Link></li>
+      <li><Link to={ PublicRoutes.APOD } >APOD</Link></li>
+      <li><Link to={ PublicRoutes.MRP } >MRP</Link></li>
+      <li><Link to={ PublicRoutes.IMAGEANDVIDEO } >Image and Video Library</Link></li>
     </ul>
   )
 }

@@ -1,13 +1,14 @@
 import { Route, Routes } from 'react-router-dom';
+import { PublicRoutes } from '../models';
 import { Apod, Home, ImageAndVideo, Mrp } from '../pages';
 
 function AppRoutes() {
   return (
     <Routes>
-        <Route path='/' element={<Home/>} />
-        <Route path='/apod' element={<Apod/>} />
-        <Route path='/mrp' element={<Mrp/>} />
-        <Route path='/image-and-video' element={<ImageAndVideo/>} />
+        <Route path={ PublicRoutes.HOME } element={<Home/>} />
+        <Route path={ PublicRoutes.APOD } element={<Apod/>} />
+        <Route path={ PublicRoutes.MRP } element={<Mrp/>} />
+        <Route path={ PublicRoutes.IMAGEANDVIDEO } element={<ImageAndVideo/>} />
         <Route element={<p>404 not found</p>} />
     </Routes>
   )

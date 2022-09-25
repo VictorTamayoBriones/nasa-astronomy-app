@@ -1,8 +1,13 @@
+import { useNavigate } from "react-router-dom"
+import { PublicRoutes } from "../../../../models";
 import { Description, GridItem, GridItemBody } from "../../styled-components/GridItem"
 
 function Apod() {
+
+  const navigate = useNavigate();
+
   return (
-    <GridItem width="50" image="https://api.nasa.gov/assets/img/general/apod.jpg">
+    <GridItem width="50" image="https://api.nasa.gov/assets/img/general/apod.jpg" onClick={()=>navigate(PublicRoutes.APOD)} >
       <GridItemBody>
         <h2>APOD</h2>
         <Description>

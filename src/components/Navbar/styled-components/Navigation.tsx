@@ -60,7 +60,7 @@ export const NavigationBar = styled.nav<Props>`
                 color: #fff;
                 text-decoration: none;
                 cursor: pointer;
-                transition: .5s all;
+                transition: .3s all;
                 &:hover{
                     background: #fff;
                     color: ${theme.azulOscuro};
