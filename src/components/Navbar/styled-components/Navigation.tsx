@@ -16,8 +16,8 @@ export const NavigationBar = styled.nav<Props>`
     svg{
         display: none;
         position: absolute;
-        top: 5px;
-        right: 5px;
+        top: 2%;
+        right: 2%;
         z-index: 2;
     }
     section{
@@ -70,10 +70,12 @@ export const NavigationBar = styled.nav<Props>`
     }
 
     @media(max-width: 674px){
+        svg{
+            display: block;
+            width: 35px;
+            height: 35px;
+        }
         ul{
-            svg{
-                display: block;
-            }
             height: ${(props)=>props.menuIsOpen ? '200px' : '0'};
             overflow: hidden;
             background: ${theme.azulOscuro};
@@ -83,6 +85,11 @@ export const NavigationBar = styled.nav<Props>`
             right: 0;
             gap: 8px;
             transition: .5s ease-out all;
+            z-index: 1;
+            border-radius: 0 0 0 5px;
+            border-left: solid 1px ${(props)=>props.menuIsOpen ? '#fff' : theme.azulOscuro};
+            border-bottom: solid 1px ${(props)=>props.menuIsOpen ? '#fff' : theme.azulOscuro};
+            box-shadow: 0 0 9px 2px ${(props)=>props.menuIsOpen ? '#00000055' : 'transparent'};
             li{
                 padding: 12px 0;
                 &:first-child, &:last-child{

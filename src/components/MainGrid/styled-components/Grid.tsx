@@ -19,7 +19,6 @@ export const MainGridContainer = styled.section`
     align-items: center;
 
     @media(max-width: 700px){
-        background: #000;
         margin-top: 20px;
         align-items: flex-start;
     }
