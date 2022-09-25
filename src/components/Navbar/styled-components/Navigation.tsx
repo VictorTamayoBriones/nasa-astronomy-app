@@ -16,7 +16,7 @@ export const NavigationBar = styled.nav<Props>`
     svg{
         display: none;
         position: absolute;
-        top: 2%;
+        top: 2.5%;
         right: 2%;
         z-index: 2;
     }
@@ -72,8 +72,8 @@ export const NavigationBar = styled.nav<Props>`
     @media(max-width: 674px){
         svg{
             display: block;
-            width: 35px;
-            height: 35px;
+            width: 40px;
+            height: 40px;
         }
         ul{
             height: ${(props)=>props.menuIsOpen ? '200px' : '0'};
@@ -103,4 +103,16 @@ export const NavigationBar = styled.nav<Props>`
             
         }
     } 
+
+    @media(max-width: 300px){
+        section{
+            h2{
+                font-size: 22px;
+            }
+        }
+        svg{
+            width: 35px;
+            height: 35px;
+        }
+    }
 `;
